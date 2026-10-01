@@ -1,0 +1,49 @@
+git是分布式-版本控制系统
+初始用于Linux内核的开发
+
+三个区域：
+工作区（working space）--git add--暂存区（Staging Area）--commit--仓库（Repository）
+
+下载Git：https://git-scm.com
+
+配置：
+git config --global user.name "Your Name"
+git config --global user.email "examil@example.com"
+git config --list
+
+配置SSH密钥：与GitLab进行身份验证，无需每次输入用户名和密码
+
+ssh-keygen -t rsa -C "注册邮箱"
+获取ssh key公钥内容，windows系统使用power shell
+cd ~/.ssh
+cat *.pub
+
+
+命令：
+git add.：将当前目录下的所有新文件和修改过的文件添加到暂存区
+. :表示当前目录的所有文件
+git add filename filename：添加特定文件
+结果：准备要提交的文件快照
+
+git commit -m "Initial commit"：将暂存区的文件提交到本地仓库
+-m "Initial commit"：添加提交信息"Initial commit"
+结果：创建一个提交版本，包含所有添加的文件
+
+git init --initial-branch=main：在当前目录初始化一个新的Git仓库
+--initial-branch=main：设置默认分支名为main（而非传统的master）
+结果：创建.git隐藏文件夹，建立新的Git仓库结构
+
+git remote add origin git@git.nju.edu.cn:XXX/git_examle.git：添加远程仓库地址并命名为orgin
+orgin：远程仓库的默认别名
+git@git......git：SSH地址
+结果：本地仓库知道了代码应该推送到的地址
+
+git push --set-upstream orgin main：将本地提交推送到远程仓库，并建立跟踪关系
+--set upstream（或-u）：设置上游分支，以后可以直接用git push
+orgin main：推送到远程仓库orgin的main分支
+结果：代码成功上传到远程仓库，本地main分支跟踪远程main分支
+
+git status
+
+
+
