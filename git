@@ -21,7 +21,7 @@ cat *.pub
 
 命令：
 git add ./-A：将当前目录下的所有新文件和修改过的文件添加到暂存区
-. :表示当前目录的所有文件
+-A :表示当前目录的所有文件
 git add filename filename：添加特定文件
 结果：准备要提交的文件快照
 
@@ -47,5 +47,12 @@ git status: 当前git状态
 
 git log: git日志
 
+git checkout 
+输入原版本编号，退回某版本
+-b new_branch：创建并切换到新分支new_branch
+-b：表示创建新分支
 
 
+Vim编辑器：
+编辑模式i-第一行提交信息-退出编辑Esc-保存并退出:wq
+直接退出 Esc-q:
