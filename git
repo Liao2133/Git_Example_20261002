@@ -20,7 +20,7 @@ cat *.pub
 
 
 命令：
-git add.：将当前目录下的所有新文件和修改过的文件添加到暂存区
+git add ./-A：将当前目录下的所有新文件和修改过的文件添加到暂存区
 . :表示当前目录的所有文件
 git add filename filename：添加特定文件
 结果：准备要提交的文件快照
@@ -43,7 +43,9 @@ git push --set-upstream orgin main：将本地提交推送到远程仓库，并�
 orgin main：推送到远程仓库orgin的main分支
 结果：代码成功上传到远程仓库，本地main分支跟踪远程main分支
 
-git status
+git status: 当前git状态
+
+git log: git日志
 
 
 
