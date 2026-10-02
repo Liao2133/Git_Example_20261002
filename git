@@ -57,4 +57,13 @@ Vim编辑器：
 编辑模式i-第一行提交信息-退出编辑Esc-保存并退出:wq
 直接退出 Esc-q:
 
+
+github：全球最大的代码托管平台，提供Git仓库托管服务
+
+cd ~/.ssh :进入.ssh目录
+ssh-keygen -t rsa -C "注册邮箱" ：生成sshkey
+cat *.pub ：查看sshkey公钥内容
+cat id_rsa.pub ：查看sshkey公钥内容
+
+ls -al ~/.ssh ：查看是否生成过sshkey
   
