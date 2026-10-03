@@ -78,4 +78,7 @@ cat id_rsa.pub ：查看sshkey公钥内容
 
 ls -al ~/.ssh ：查看是否生成过sshkey
 
+git clone
 
+再次修改
+  
